@@ -38,15 +38,17 @@
 	}
 
 	body {
-		background: _palette(bg);
-		overflow-x: hidden;
+		 background: #f5f5f5; // your desired background color
+   		 color: #222;          // make text readable against new background
+    	 overflow-x: hidden;
 
-		// Stops initial animations until page loads.
-			&.is-preload {
-				*, *:before, *:after {
-					@include vendor('animation', 'none !important');
-					@include vendor('transition', 'none !important');
+		    // Stops initial animations until page loads.
+		    &.is-preload {
+		        *, *:before, *:after {
+		            @include vendor('animation', 'none !important');
+		            @include vendor('transition', 'none !important');
 				}
 			}
+
 
 	}
